@@ -4,92 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADMIN</title>
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
     <header>
-        <nav>
-            <picture>
-                <a href="">
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="../../index.html">
                     <img src="../../img/multimedia/branding/logo_light_horizontal.svg" alt="Isologotipo de Funko Shop">
                 </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="./ver-tienda.html">VER TIENDA</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../shop.html">VER TIENDA</a>
                 </li>
-                <li>
-                    <a href="./admin.html">ADMIN</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./admin.html">ADMIN</a>
                 </li>
-                <li>
-                    <a href="./salir.html">SALIR</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./salir.html">SALIR</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <label for="buscar">
-            <picture>
-                <img src="../../img/multimedia/icons/search_icon.svg" alt="search icon">
-            </picture>
-        </label>
-        <input type="text" id="buscar" name="" placeholder="código, nombre o categoria">
-        <table>
-            <tr>
-                <th>LISTADO DE PRODUCTOS</th>
-                <th>
-                    <p>AGREGAR</p>
-                    <button id="add">+</button>
-                </th>
-            </tr>
-            <tr>
-                <th>ID</th>
-                <th>Código</th>
-                <th>Nombre del Producto</th>
-                <th>Categoria</th>
-            </tr>
-            <tr> <!-- fila de producto -->
-                <th></th> 
-                <th></th>
-                <th></th>
-                <th></th>
-                <th>
-                    <button>
-                        <picture>
-                            <img src="../../img/multimedia/icons/edit_pencil.svg" alt="edit pencil">
-                        </picture>
-                    </button>
-                </th>
-                <th>
-                    <button>
-                        <picture>
-                            <img src="../../img/multimedia/icons/delete_trash.svg" alt="delete trash">
-                        </picture>
-                    </button>
-                </th>
-            </tr>
-        </table>
+    <main class="admin container">
+        <div class="admin__search">
+            <label class="admin__search-icon" for="buscar">
+                <picture class="admin__search-icon">
+                    <img src="../../img/multimedia/icons/search_icon.svg" alt="search icon">
+                </picture>
+            </label>
+            <input class="admin__search-input" type="text" id="buscar" name="" placeholder="código, nombre o categoria">
+        </div>
+        <div class="container admin__table-container">
+            <div class="admin__table-headers">
+                <div>
+                    <p class="admin__table-header1">LISTADO DE PRODUCTOS</p>
+                </div>
+                <div class="admin__table-btn">
+                    <p class="admin__table-header2">AGREGAR</p>
+                        <button class="admin__table-addbtn" id="add">+</button>
+                </div>
+            </div>  
+            <table class="admin__table">
+                <tr class="admin__table-titles">
+                    <th class="admin__table-title1">ID</th>
+                    <th class="admin__table-title2">Código</th>
+                    <th class="admin__table-title3">Nombre del Producto</th>
+                    <th class="admin__table-title4">Categoria</th>
+                    <th class="admin__table-title0"></th>
+                    <th class="admin__table-title0"></th>
+                </tr>
+                <tr class="admin__row"> <!-- fila de producto -->
+                    <th></th> 
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th class="admin__row-edit">
+                        <button class="admin__row-edit-icon">
+                            <picture class="admin__row-edit-icon">
+                                <img class="admin__row-edit-icon" src="../../img/multimedia/icons/edit_pencil.svg" alt="edit pencil">
+                            </picture>
+                        </button>
+                    </th>
+                    <th>
+                        <button class="admin__row-delete-icon">
+                            <picture class="admin__row-delete-icon">
+                                <img class="admin__row-delete-icon" src="../../img/multimedia/icons/delete_trash.svg" alt="delete trash">
+                            </picture>
+                        </button>
+                    </th>
+                </tr>
+            </table>
+        </div>
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../shop.html">SHOP</a>
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../shop.html">SHOP</a>
                 </li>
-                <li>
-                    <a href="../registrarse.html">REGISTRARSE</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./register.html">REGISTRARSE</a>
                 </li>
-                <li>
-                    <a href="../ingresar.html">INGRESAR</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./login.html">INGRESAR</a>
                 </li>
-                <li>
-                    <a href="../contacto.html">CONTACTO</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../contacto.html">CONTACTO</a>
                 </li>
             </ul>
             <picture>
                 <img src="../../img/multimedia/branding/isotype.svg" alt="Isotipo de Funko Shop">
             </picture>
         </nav>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
 </body>
 </html>

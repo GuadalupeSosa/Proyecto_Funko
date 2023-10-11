@@ -4,93 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CREATE</title>
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
     <header>
-        <nav>
-            <picture>
-                <a href="">
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="../../index.html">
                     <img src="../../img/multimedia/branding/logo_light_horizontal.svg" alt="Isologotipo de Funko Shop">
                 </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="./ver-tienda.html">VER TIENDA</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../shop.html">VER TIENDA</a>
                 </li>
-                <li>
-                    <a href="./admin.html">ADMIN</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./admin.html">ADMIN</a>
                 </li>
-                <li>
-                    <a href="./salir.html">SALIR</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./salir.html">SALIR</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>CREAR NUEVO ITEM</h2>
-            <form action="">
-                <div>
-                    <label for="categoria">Categoria:</label>
-                    <select name="" id="categoria">
-                        <option value="">Seleccionar</option>
-                    </select>
-                    <label for="licencia">Licencia:</label>
-                    <select name="" id="licencia">
-                        <option value="">Seleccionar</option>
-                    </select>
+    <main class="create container">
+        <section class="create__content">
+            <h2 class="create__title">CREAR NUEVO ITEM</h2>
+            <form class="create__form" action="">
+                <div class="form__item-create-select">
+                    <div class="form__item-create-category">
+                        <label class="form__label" for="categoria">Categoria:</label>
+                        <select class="form__select" name="" id="categoria">
+                            <option class="form__select-content" value="">Seleccionar</option>
+                        </select>
+                    </div>
+                    <div class="form__item-create-license">
+                        <label class="form__label" for="licencia">Licencia:</label>
+                        <select class="form__select" name="" id="licencia">
+                            <option class="form__select-content" value="">Seleccionar</option>
+                        </select>
+                    </div>
                 </div>
-                <div>
-                    <label for="nombre-producto">Nombre del producto:</label>
-                    <input type="text" id="nombre-producto" name="" placeholder="Kakashi Hatake Shippuden Saga">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Descripción del producto"></textarea>
+                <div class="form__item-create-product">
+                    <div class="form__item-content">
+                        <label class="form__label" for="nombre-producto">Nombre del producto:</label>
+                        <input class="form__input-product" type="text" id="nombre-producto" name="" placeholder="Kakashi Hatake Shippuden Saga">
+                    </div>
+                        <textarea class="form__textarea" name="" id="" cols="30" rows="10" placeholder="Descripción del producto."></textarea>
                 </div>
-                <div>
-                    <label for="sku">SKU:</label>
-                    <input type="text" id="sku" name="" placeholder="SSK111AB001">
-                    <label for="precio">Precio:</label>
-                    <input type="text" id="precio" name="" placeholder="$ 0.000,00">
-                    <label for="stock">Stock:</label>
-                    <input type="text" id="stock" name="" placeholder="0">
-                    <label for="descuento">Descuento:</label>
-                    <input type="text" id="decuento" name="" placeholder="0%">
-                    <label for="cuotas">Cuotas:</label>
-                    <select name="" id="cuotas">
-                        <option value="">3 Cuotas sin interés</option>
-                    </select>
+                <div class="form__item-create">
+                    <div class="form__item-content">
+                        <label class="form__label" for="sku">SKU:</label>
+                        <input class="form__input-sku" type="text" id="sku" name="" placeholder="SSK111AB001">
+                    </div>
+                    <div class="form__item-content">
+                        <label class="form__label" for="precio">Precio:</label>
+                        <input class="form__input-price" type="text" id="precio" name="" placeholder="$ 0.000,00">
+                    </div>
+                    <div class="form__item-content">
+                        <label class="form__label" for="stock">Stock:</label>
+                        <input class="form__input-stock" type="text" id="stock" name="" placeholder="0">
+                    </div>
                 </div>
-                <div>
-                    <label for="imagenes">Imágenes:</label>
-                    <input type="file" id="imagenes" name="" placeholder="Elegir archivos">
+                <div class="form__item-create">
+                    <div class="form__item-content"> 
+                        <label class="form__label" for="descuento">Descuento:</label>
+                        <input class="form__input-discount" type="text" id="decuento" name="" placeholder="0%">
+                    </div>
+                    <div class="form__item-content">
+                        <label class="form__label" for="cuotas">Cuotas:</label>
+                        <select class="form__select" name="" id="cuotas">
+                            <option value="">3 Cuotas sin interés</option>
+                        </select>
+                    </div>
                 </div>
-                <div>
-                    <input type="submit" value="Agregar producto">
-                    <input type="reset" value="Limpiar">
+                <div class="form__item-create-img form__item-content">
+                    <label class="form__label" for="imagenes">Imágenes:</label>
+                    <input class="form__input-img" type="file" id="imagenes" name="" placeholder="Elegir archivos">
+                </div>
+                <div class="form__submit-create">
+                    <input class="form__btn-create" type="submit" value="Agregar producto">
+                    <input class="form__btn-create" type="reset" value="Limpiar">
                 </div>
             </form>
         </section>
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../shop.html">SHOP</a>
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../shop.html">SHOP</a>
                 </li>
-                <li>
-                    <a href="../registrarse.html">REGISTRARSE</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./register.html">REGISTRARSE</a>
                 </li>
-                <li>
-                    <a href="../ingresar.html">INGRESAR</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./login.html">INGRESAR</a>
                 </li>
-                <li>
-                    <a href="../contacto.html">CONTACTO</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../contacto.html">CONTACTO</a>
                 </li>
             </ul>
             <picture>
                 <img src="../../img/multimedia/branding/isotype.svg" alt="Isotipo de Funko Shop">
             </picture>
         </nav>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
 </body>
 </html>
